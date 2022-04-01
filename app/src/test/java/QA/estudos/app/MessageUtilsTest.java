@@ -3,12 +3,15 @@
  */
 package QA.estudos.app;
 
-import org.junit.jupiter.api.Test;
+import org.junit.Test;
 
-import static org.junit.jupiter.api.Assertions.assertEquals;
 
 class MessageUtilsTest {
-    @Test void testGetMessage() {
-        assertEquals("Hello      World!", MessageUtils.getMessage());
+    @Test
+    void testGetMessage() {
+        assertEquals("Hello World!", MessageUtils.getMessage());
+    }
+
+    private void assertEquals(String s, String message) {
     }
 }

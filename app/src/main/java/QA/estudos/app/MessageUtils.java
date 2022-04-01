@@ -4,6 +4,7 @@
 package QA.estudos.app;
 
 class MessageUtils {
+
     public static String getMessage() {
         return "Hello      World!";
     }

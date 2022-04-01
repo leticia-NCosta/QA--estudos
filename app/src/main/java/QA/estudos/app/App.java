@@ -3,19 +3,14 @@
  */
 package QA.estudos.app;
 
-import QA.estudos.list.LinkedList;
 
-import static QA.estudos.utilities.StringUtils.join;
-import static QA.estudos.utilities.StringUtils.split;
-import static QA.estudos.app.MessageUtils.getMessage;
-
-import org.apache.commons.text.WordUtils;
 
 public class App {
+    public String gretting() {
+        return "Hello word";
+    }
+
     public static void main(String[] args) {
-        LinkedList tokens;
-        tokens = split(getMessage());
-        String result = join(tokens);
-        System.out.println(WordUtils.capitalize(result));
+        System.out.println(new App().gretting());
     }
 }
